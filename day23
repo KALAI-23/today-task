@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <main class="container text-center">
+        <h1><span class="badge bg-secondary">WELCOME</span></h1>
+        <br>
+        <img src="download.jfif" alt="" class="rounded-circle">
+        <br><br>
+        <div class="btn-group">
+            <a href="https://www.kdbinfotech.lk/" class="btn btn-primary active" aria-current="page">DONBOSCO</a>
+            <a href="https://csrc.nist.gov/glossary/term/interim_authorization_to_test" class="btn btn-primary">IATT</a>
+        </div>
+        <br><br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;">loading...</div>
+        </div>
+        <br>
+        <div class="spinner-border text-success">
+            <span class="">loading...</span>
+        </div>
+        <br>
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qjPRZGWH3+c70DDfHLqa82d5FZw5p1T8kZbpZmN3n6HKDGH58RwgfH3Mv3GyZB2n" crossorigin="anonymous"></script>
+</body>
+
+</html>
