@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalai</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aliceblue;
+        margin: 100px;
+    }
+    
+    #Box {
+        font-size: 40px;
+        border: solid saddlebrown;
+        width: 300px;
+        text-align: center;
+        background-color: slategrey;
+        color: white;
+        padding: 30px;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .button button {
+        padding: 20px;
+        font-size: 30px;
+        margin: 10px;
+        background-color: slategrey;
+        color: white;
+        border: solid saddlebrown;
+        border-radius: 5px;
+    }
+    
+    #inputbox1,
+    #inputbox2 {
+        margin-top: 10px;
+        background-color: slategrey;
+        border: solid saddlebrown;
+        padding: 20px;
+    }
+    
+    .button button:hover {
+        background-color: lightblue;
+    }
+</style>
+
+<body>
+    <div id="Box">0</div>
+    <input type="number" id="inputbox1">
+    <input type="number" id="inputbox2">
+
+
+
+    <div class="button">
+        <button id="minus" onclick="decrease()">-</button>
+        <button id="plus" onclick="addition()">+</button>
+        <button id="divide" onclick="division()">/</button>
+        <button id="multiply" onclick="multiplication()">*</button>
+    </div>
+
+
+
+    <script>
+        function getInputValues() {
+
+            let inputValue1 = document.getElementById('inputbox1').value;
+            let inputValue2 = document.getElementById('inputbox2').value;
+            return [parseInt(inputValue1), parseInt(inputValue2)];
+        }
+
+        function decrease() {
+            let [a, b] = getInputValues();
+            document.getElementById('Box').innerText = a - b;
+        }
+
+        function addition() {
+            let [a, b] = getInputValues();
+            document.getElementById('Box').innerText = a + b;
+        }
+
+        function division() {
+            let [a, b] = getInputValues();
+
+            document.getElementById('Box').innerText = a / b;
+
+        }
+
+        function multiplication() {
+            let [a, b] = getInputValues();
+            document.getElementById('Box').innerText = a * b;
+        }
+    </script>
+</body>
+
+</html>
