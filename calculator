@@ -12,17 +12,26 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background-color: aliceblue;
+        background-color: whitesmoke;
         margin: 100px;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px gray;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px;
     }
     
     #Box {
         font-size: 40px;
-        border: solid saddlebrown;
         width: 300px;
         text-align: center;
-        background-color: slategrey;
-        color: white;
+        background-color: lightgray;
+        color: black;
         padding: 30px;
     }
     
@@ -36,37 +45,38 @@
         padding: 20px;
         font-size: 30px;
         margin: 10px;
-        background-color: slategrey;
-        color: white;
-        border: solid saddlebrown;
+        background-color: lightgray;
+        color: black;
         border-radius: 5px;
     }
     
     #inputbox1,
     #inputbox2 {
         margin-top: 10px;
-        background-color: slategrey;
-        border: solid saddlebrown;
+        background-color: lightgray;
         padding: 20px;
+        color: black;
     }
     
     .button button:hover {
-        background-color: lightblue;
+        background-color: gray;
+        transform: scale(0.95);
     }
 </style>
 
 <body>
-    <div id="Box">0</div>
-    <input type="number" id="inputbox1">
-    <input type="number" id="inputbox2">
+    <div id="container">
+        <div id="Box">0</div>
+        <input type="number" id="inputbox1">
+        <input type="number" id="inputbox2">
 
 
-
-    <div class="button">
-        <button id="minus" onclick="decrease()">-</button>
-        <button id="plus" onclick="addition()">+</button>
-        <button id="divide" onclick="division()">/</button>
-        <button id="multiply" onclick="multiplication()">*</button>
+        <div class="button">
+            <button id="minus" onclick="decrease()">-</button>
+            <button id="plus" onclick="addition()">+</button>
+            <button id="divide" onclick="division()">/</button>
+            <button id="multiply" onclick="multiplication()">*</button>
+        </div>
     </div>
 
 
